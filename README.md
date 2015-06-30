@@ -17,16 +17,16 @@ First three Packets are TCP Packets (handshake behavior?):
 
 First Packet:
 Client sends TCP with Syn Flag to Server 
->synchronizing sequence numbers (those are random)
+//synchronizing sequence numbers (those are random)
 
 Second Packet:
 Server sends TCP with Ack and Syn Flag to Client
->sending ack equal to client's previous sequence number (len/amount of data does not matter right now)
->sending (syn) sequence number to client
+//sending ack equal to client's previous sequence number (len/amount of data does not matter right now)
+//sending (syn) sequence number to client
 
 Third Packet:
 Client sends TCP with Ack Flag to Server
->none
+//none
 
 -> 'Handshake' complete?!
 
@@ -40,13 +40,13 @@ Client to Server -> Request command "GET" /client/steam_cmd_win32 (using windows
   Host: client-download.steampowered.com
   HeaderEnd: CLRF
 also sending TCP with Ack (again) and Push (interactive traffic; force sending data without buffering)
->checking if current steamcmd is newest version/updated
+//checking if current steamcmd is newest version/updated
 
 Second Packet:
 Server to Client -> Response Status: Moved temporarily, URL: /client/steam_cmd_win32 
   StatusCode: 302, Moved temporarily
   Location:  http://media2.steampowered.com/client/steam_cmd_win32?1428537885 <--comparing/checking number (first packet)
->none (guess some servers are too heavy loaded/used)
+//none (guess some servers are too heavy loaded/used)
 
 
 
