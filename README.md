@@ -84,7 +84,9 @@ https://support.microsoft.com/en-us/kb/169292
 
 
 
-
+Side goal:
+can be connected with fritz.box repo
+e.g. auto-forward ports and close/delete them if server is not running.
 
 
 
